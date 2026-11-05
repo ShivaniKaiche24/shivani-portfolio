@@ -1,0 +1,256 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================================
+   GLOBAL DESIGN SYSTEM
+========================================= */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+  }
+
+  body {
+    @apply font-primary text-white leading-loose;
+    background: #090D12;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  * {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  /* Text selection */
+
+  ::selection {
+    background: rgba(91, 141, 239, 0.3);
+    color: #ffffff;
+  }
+
+  /* Consistent interactive behavior */
+
+  a,
+  button {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid #5B8DEF;
+    outline-offset: 4px;
+  }
+
+  /* =========================================
+     SECTION STRUCTURE
+  ========================================= */
+
+  section {
+    scroll-margin-top: 100px;
+    overflow: hidden;
+    @apply px-6 py-20 xl:px-36;
+  }
+
+  .section-dark {
+    background: #090D12;
+  }
+
+  .section-light {
+    background: #0D1218;
+  }
+
+  /* =========================================
+     TYPOGRAPHY
+  ========================================= */
+
+  .h1 {
+    @apply text-[40px] font-semibold leading-[1.1] text-white xl:text-[60px];
+    letter-spacing: -0.035em;
+  }
+
+  .h2 {
+    @apply text-[28px] font-semibold xl:text-[40px];
+    color: #8BAEFF;
+    letter-spacing: -0.025em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  p {
+    @apply leading-relaxed text-white/80;
+  }
+
+  .section-title {
+    @apply mb-10 text-center text-4xl font-extrabold;
+    color: #8BAEFF;
+    letter-spacing: -0.025em;
+  }
+
+  /* =========================================
+     CARDS
+  ========================================= */
+
+  .card {
+    @apply relative overflow-hidden rounded-2xl border transition-all duration-300;
+    background: linear-gradient(
+      145deg,
+      rgba(20, 29, 42, 0.95),
+      rgba(11, 16, 23, 0.98)
+    );
+    border-color: rgba(255, 255, 255, 0.09);
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(91, 141, 239, 0.45);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  }
+
+  /* =========================================
+     HOVER EFFECTS
+  ========================================= */
+
+  .hover-glow {
+    box-shadow: 0 0 25px rgba(91, 141, 239, 0.08);
+    transition:
+      box-shadow 0.4s ease,
+      border-color 0.4s ease,
+      transform 0.4s ease;
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 35px rgba(91, 141, 239, 0.2);
+  }
+
+  /* Consistent blue accent */
+
+  .text-accent {
+    color: #8BAEFF;
+  }
+
+  .bg-accent {
+    background-color: #5B8DEF;
+  }
+
+  .border-accent {
+    border-color: rgba(91, 141, 239, 0.4);
+  }
+
+  /* =========================================
+     BACKGROUND EFFECTS
+  ========================================= */
+
+  @keyframes pulse-slow {
+    0%,
+    100% {
+      transform: scale(1);
+      opacity: 0.15;
+    }
+
+    50% {
+      transform: scale(1.15);
+      opacity: 0.25;
+    }
+  }
+
+  @keyframes pulse-slower {
+    0%,
+    100% {
+      transform: scale(1);
+      opacity: 0.1;
+    }
+
+    50% {
+      transform: scale(1.12);
+      opacity: 0.2;
+    }
+  }
+
+  .animate-pulse-slow {
+    animation: pulse-slow 7s ease-in-out infinite;
+  }
+
+  .animate-pulse-slower {
+    animation: pulse-slower 9s ease-in-out infinite;
+  }
+
+  /* =========================================
+     SCROLLBAR UTILITIES
+  ========================================= */
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* =========================================
+     SCROLL CONTROL
+  ========================================= */
+
+  .no-scroll {
+    overflow: hidden !important;
+    height: 100vh;
+    overscroll-behavior: none;
+    touch-action: none;
+  }
+
+  /* =========================================
+     ACCESSIBILITY
+  ========================================= */
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* =========================================
+     RESPONSIVE
+  ========================================= */
+
+  @media (max-width: 768px) {
+    section {
+      scroll-margin-top: 85px;
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    * {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    .section-title {
+      @apply text-3xl;
+    }
+  }
+}
