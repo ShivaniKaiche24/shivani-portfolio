@@ -168,8 +168,9 @@ const Home = () => {
   const [success, setSuccess] = useState("");
   const [error, setError] = useState("");
 
-  const handleContactSubmit = async (event) => {
+    const handleContactSubmit = async (event) => {
     event.preventDefault();
+    const form = event.currentTarget; // must be here, before any await
 
     setLoading(true);
     setSuccess("");
