@@ -1,0 +1,5 @@
+
+"$schema" = "https://open-api.netlify.com/netlify.schema.json"
+
+[build.environment]
+  SECRETS_SCAN_OMIT_KEYS = "NEXT_PUBLIC_RECAPTCHA_SITE_KEY"
