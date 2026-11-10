@@ -791,7 +791,7 @@ const Home = () => {
               </p>
 
               <a
-                href="mailto:shivanisk442@gmail.com"
+                href="mailto:shivanikaiche24@gmail.com"
                 className="mt-8 inline-flex items-center gap-3 text-sm text-white/70 transition hover:text-[#5B8DEF]"
               >
                 <FiMail className="text-[#5B8DEF]" />
