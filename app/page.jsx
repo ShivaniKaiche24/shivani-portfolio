@@ -225,48 +225,7 @@ const Home = () => {
       <ParticlesBackground />
 
       <PageTransition>
-        {/* NAVIGATION */}
-
-        <header className="relative z-20 border-b border-white/[0.07]">
-          <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-12">
-            <a href="#home" className="group flex items-center gap-3">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-[#5B8DEF]/30 bg-[#5B8DEF]/10 font-mono text-sm font-bold text-[#5B8DEF] transition-transform group-hover:rotate-6">
-                SK
-              </span>
-
-              <span className="leading-tight">
-                <span className="block text-sm font-semibold tracking-wide">
-                  Shivani Kaiche
-                </span>
-                <span className="mt-1 block text-[10px] uppercase tracking-[0.2em] text-white/40">
-                  Developer Portfolio
-                </span>
-              </span>
-            </a>
-
-            <div className="hidden items-center gap-8 text-sm text-white/55 md:flex">
-              <a className="transition hover:text-[#5B8DEF]" href="#about">
-                About
-              </a>
-              <a className="transition hover:text-[#5B8DEF]" href="#skills">
-                Skills
-              </a>
-              <a className="transition hover:text-[#5B8DEF]" href="#projects">
-                Projects
-              </a>
-              <a className="transition hover:text-[#5B8DEF]" href="#education">
-                Education
-              </a>
-            </div>
-
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-2 rounded-full border border-[#5B8DEF]/40 px-4 py-2.5 text-xs font-semibold text-[#5B8DEF] transition hover:bg-[#5B8DEF] hover:text-[#090D12]"
-            >
-              Let's Talk <FiArrowUpRight />
-            </a>
-          </nav>
-        </header>
+       
 
         {/* HERO */}
 
