@@ -293,14 +293,14 @@ const Home = () => {
                 Hello, world. I'm
               </p>
 
-              <h1 className="max-w-3xl text-4xl font-semibold leading-[1.05] tracking-[-0.055em] sm:text-5xl lg:text-6xl xl:text-[4.5rem]">
-                 Shivani
+             <h1 className="max-w-3xl text-4xl font-semibold leading-[1.05] tracking-[-0.055em] sm:text-5xl lg:text-[3.25rem] xl:text-[3.75rem]"> 
+              Shivani
                 <br />
                 <span className="text-white/35">Kaiche</span>
                 <span className="text-[#5B8DEF]">.</span>
               </h1>
 
-              <div className="mt-7 flex min-h-8 items-center font-mono text-base text-[#5B8DEF] sm:text-lg">
+              <div className="mt-5 flex min-h-7 items-center font-mono text-sm text-[#5B8DEF] sm:text-base">
                 <span className="mr-3 text-white/25">{"//"}</span>
                 <TypeAnimation
                   sequence={[
@@ -318,7 +318,7 @@ const Home = () => {
                 />
               </div>
 
-              <p className="mt-7 max-w-2xl text-base leading-8 text-white/60 sm:text-lg">
+              <p className="mt-6 max-w-2xl text-sm leading-7 text-white/60 sm:text-base">
                 I develop web applications using Java, Spring Boot, React, and MySQL,
                  with a focus on backend development, REST API design, and database integration. 
                  I prioritize writing clean, maintainable code and building reliable solutions 
@@ -396,8 +396,8 @@ const Home = () => {
                 <div className="absolute inset-8 rounded-full bg-[#5B8DEF]/10 blur-3xl" />
 
                 {/* portrait frame */}
-                <div className="relative h-[300px] w-[300px] rounded-full bg-gradient-to-br from-[#5B8DEF] via-[#8B9FEF] to-[#5B8DEF] p-[3px] shadow-[0_20px_70px_rgba(91,141,239,0.18)] sm:h-[350px] sm:w-[350px]">
-                  <div className="h-full w-full overflow-hidden rounded-full border-[5px] border-[#10151C] bg-[#171C22]">
+               <div className="relative h-[240px] w-[240px] rounded-full bg-gradient-to-br from-[#5B8DEF] via-[#8B9FEF] to-[#5B8DEF] p-[3px] shadow-[0_20px_70px_rgba(91,141,239,0.18)] sm:h-[280px] sm:w-[280px]">
+                <div className="h-full w-full overflow-hidden rounded-full border-[5px] border-[#10151C] bg-[#171C22]">
                     <img
                       src="/Photo.png"
                       alt="Shivani Kaiche"
@@ -416,7 +416,7 @@ const Home = () => {
 
         <section
           id="about"
-          className="mx-auto max-w-7xl px-6 py-24 lg:px-12 lg:py-32"
+          className="mx-auto max-w-7xl px-6 py-16 lg:px-12 lg:py-20"
         >
           <motion.div
             variants={fadeUp}
@@ -430,7 +430,7 @@ const Home = () => {
                 01 / A little about me
               </p>
 
-              <h2 className="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
+             <h2 className="mt-4 text-2xl font-semibold tracking-tight sm:text-3xl">
                 I build with
                 <br />
                 <span className="text-white/35">purpose.</span>
@@ -438,14 +438,14 @@ const Home = () => {
             </div>
 
             <div>
-              <p className="text-xl leading-9 text-white/85 sm:text-2xl">
+              <p className="text-lg leading-8 text-white/85 sm:text-xl">
                 I'm a Java Full-Stack Developer and CDAC PG-DAC graduate
                 with a background in Instrumentation and Control Engineering.
                 I enjoy working through the details that make an application
                 secure, useful, and maintainable.
               </p>
 
-              <p className="mt-6 leading-8 text-white/55">
+              <p className="mt-6 text-sm leading-7 text-white/55">
                 My project experience includes building Spring Boot REST
                 APIs, implementing JWT authentication and role-based access,
                 designing relational data models, and testing endpoints with
@@ -453,7 +453,7 @@ const Home = () => {
                 and integrated frontend features with backend services.
               </p>
 
-              <p className="mt-5 leading-8 text-white/55">
+              <p className="mt-5 text-sm leading-7 text-white/55">
                 When something breaks, I prefer to investigate the cause
                 instead of applying random fixes. In CareerCompass, for
                 example, I worked through Spring Security filter-chain
@@ -485,7 +485,7 @@ const Home = () => {
 
         <section
           id="services"
-          className="border-y border-white/[0.07] bg-[#0D1218] px-6 py-24 lg:px-12 lg:py-28"
+          className="border-y border-white/[0.07] bg-[#0D1218] px-6 py-16 lg:px-12 lg:py-20"
         >
           <div className="mx-auto max-w-7xl">
             <motion.div
@@ -499,7 +499,7 @@ const Home = () => {
                 <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#5B8DEF]">
                   02 / What I can help with
                 </p>
-                <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
+                <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
                   Practical skills.
                   <br />
                   <span className="text-white/35">Real applications.</span>
@@ -553,7 +553,7 @@ const Home = () => {
 
         <section
           id="skills"
-          className="mx-auto max-w-7xl px-6 py-24 lg:px-12 lg:py-28"
+          className="mx-auto max-w-7xl px-6 py-16 lg:px-12 lg:py-20"
         >
           <motion.div
             variants={fadeUp}
@@ -565,7 +565,7 @@ const Home = () => {
               03 / Technical toolkit
             </p>
 
-            <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
+            <h2 className="mt-4text-3xl font-semibold tracking-tight sm:text-4xl">
               Tools of the trade.
             </h2>
 
@@ -609,7 +609,7 @@ const Home = () => {
 
         <section
           id="projects"
-          className="border-y border-white/[0.07] bg-[#0D1218] px-6 py-24 lg:px-12 lg:py-28"
+          className="border-y border-white/[0.07] bg-[#0D1218] px-6 py-16 lg:px-12 lg:py-20"
         >
           <div className="mx-auto max-w-7xl">
             <motion.div
@@ -624,7 +624,7 @@ const Home = () => {
                   04 / Selected work
                 </p>
 
-                <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
+                <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
                   Built, tested,
                   <br />
                   <span className="text-white/35">and learned from.</span>
@@ -727,13 +727,13 @@ const Home = () => {
 
         <section
           id="education"
-          className="mx-auto max-w-7xl px-6 py-24 lg:px-12 lg:py-28"
+          className="mx-auto max-w-7xl px-6 py-16 lg:px-12 lg:py-20"
         >
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#5B8DEF]">
             05 / Education
           </p>
 
-          <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
+          <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
             The foundation.
           </h2>
 
@@ -769,7 +769,7 @@ const Home = () => {
 
         <section
           id="contact"
-          className="border-t border-white/[0.08] bg-[#0D1218] px-6 py-24 lg:px-12 lg:py-28"
+          className="border-t border-white/[0.08] bg-[#0D1218] px-6 py-16 lg:px-12 lg:py-20"
         >
           <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
@@ -777,7 +777,7 @@ const Home = () => {
                 06 / Start a conversation
               </p>
 
-              <h2 className="mt-5 text-4xl font-semibold leading-tight tracking-tight sm:text-6xl">
+              <h2 className="mt-5 text-3xl font-semibold leading-tight tracking-tight sm:text-5xl">
                 Have a project
                 <br />
                 in mind<span className="text-[#5B8DEF]">?</span>

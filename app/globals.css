@@ -14,7 +14,7 @@
   }
 
   body {
-    @apply font-primary text-white leading-loose;
+    @apply font-primary text-white leading-relaxed;
     background: #090D12;
     -ms-overflow-style: none;
     scrollbar-width: none;
