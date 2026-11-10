@@ -15,7 +15,7 @@
 
   body {
     @apply font-primary text-white leading-relaxed;
-    background: #090D12;
+    background: #0f161e;
     -ms-overflow-style: none;
     scrollbar-width: none;
     overflow-y: scroll;
