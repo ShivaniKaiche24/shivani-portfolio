@@ -24,6 +24,7 @@ import { SiLeetcode } from "react-icons/si";
 import ParticlesBackground from "../components/ParticlesBackground";
 import PageTransition from "../components/PageTransition";
 import ScrollToTop from "@/components/ScrollToTop";
+import { form } from "framer-motion/m";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -175,7 +176,7 @@ const Home = () => {
     setError("");
 
     try {
-      const formData = new FormData(event.currentTarget);
+      const formData = new FormData(form);
 
       const payload = {
         name: formData.get("name"),
@@ -208,7 +209,7 @@ const Home = () => {
       }
 
       setSuccess("Message sent successfully. Thank you for reaching out!");
-      event.currentTarget.reset();
+      form.reset();
     } catch (err) {
       setError(
         err.message || "Something went wrong. Please try again."
@@ -564,7 +565,7 @@ const Home = () => {
               03 / Technical toolkit
             </p>
 
-            <h2 className="mt-4text-3xl font-semibold tracking-tight sm:text-4xl">
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
               Tools of the trade.
             </h2>
 
