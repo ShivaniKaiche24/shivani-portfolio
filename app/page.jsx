@@ -454,12 +454,11 @@ const Home = () => {
               </p>
 
               <p className="mt-5 text-sm leading-7 text-white/55">
-                When something breaks, I prefer to investigate the cause
-                instead of applying random fixes. In CareerCompass, for
-                example, I worked through Spring Security filter-chain
-                configuration and a 403-versus-401 authorization issue.
-                That structured approach is something I bring to new
-                features and existing codebases alike.
+                I don't like guessing when something breaks. I'd rather
+                slow down and figure out why it's happening before I
+                change anything. I enjoy that kind of digging, and I'd
+                like to keep doing it on real projects with a team that
+                can teach me along the way.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
