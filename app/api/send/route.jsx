@@ -43,20 +43,25 @@ export async function POST(req) {
     const resend = new Resend(process.env.RESEND_API_KEY);
 
     // ===== Send emails =====
-    await resend.emails.send({
+   const{error:sendError} = await resend.emails.send({
       from: "Portfolio Contact <onboarding@resend.dev>",
-      to: ["shivanikaiche24@gmail.com"],
+      to: ["shivanisk442@gmail.com"],
       subject: `New message from ${name}: ${subject}`,
       html: `<p>${message}</p>`,
     });
 
-    await resend.emails.send({
+     if (sendError) {
+      console.error("Resend error:", sendError);
+      return new Response(JSON.stringify({ error: "Failed to send message" }), { status: 500 });
+    }
+    const {error: replyError}=await resend.emails.send({
       from: "Shivani Kaiche <onboarding@resend.dev>",
       to: [email],
       subject: "Thanks for contacting me!",
       html: `<p>Thank you ${name}, your message has been received!</p>`,
     });
 
+    if (replyError) console.error("Auto-reply failed:", replyError);
     return new Response(JSON.stringify({ success: true }), { status: 200 });
   } catch (error) {
     console.error("Contact API Error:", error);
